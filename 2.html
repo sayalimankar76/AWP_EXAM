@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRlM_RLyy-dV3LrERTnRKJuK9x4aWdMl4eh0A&usqp=CAU);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            margin-left: 35%;
+        }
+
+
+        .loginbox {
+            background: rgba(0, 0, 0, 0.2);
+            height: 40vh;
+            width: 20vw;
+            padding: 20px;
+            border-radius: 30px;
+
+
+        }
+
+        .loginbox input[type="text"],
+        input[type="password"] {
+            background: transparent;
+            outline: none;
+            border: none;
+            border-bottom: 2px solid black;
+        }
+
+        button {
+            background: red;
+            border: none;
+            width: 15vw;
+            border-radius: 20px;
+            height: 30px;
+            font-size: 15px;
+            margin-left: 20px;
+            outline: none;
+        }
+
+        button:hover {
+            cursor: pointer;
+            background: tomato;
+        }
+    </style>
+
+    <script src="2.js"></script>
+</head>
+
+<body>
+    <div class="loginbox">
+        <h3>LOGIN HERE</h3>
+        <form>
+            <label for="user" style="font-size: 20px;">Username</label><br><br>
+            <input type="text" name="usre" id="user" placeholder="Enter Username" required><br><br>
+
+            <label for="pass" style="font-size: 20px;">Password</label><br><br>
+            <input type="password" name="pass" id="pass" placeholder="Enter Password" required><br><br>
+        </form>
+
+        <button id="btn" onclick="submit()">Submit</button>
+
+    </div>
+
+    <div>
+        <p style="font-weight:bold">Username Of User is:</p>
+        <div id="user1" style="border-bottom: 1 pa black;"> </div><br>
+
+        <p style="font-weight: bold;">Password of User is:</p>
+        <div id="pass1"></div>
+
+    </div>
+</body>
+
+</html>
